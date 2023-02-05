@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ShoeStoreRouterTest/static/css/main.8b62184b.css",
+    "main.js": "/ShoeStoreRouterTest/static/js/main.6f46b1f3.js",
+    "index.html": "/ShoeStoreRouterTest/index.html",
+    "main.8b62184b.css.map": "/ShoeStoreRouterTest/static/css/main.8b62184b.css.map",
+    "main.6f46b1f3.js.map": "/ShoeStoreRouterTest/static/js/main.6f46b1f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b62184b.css",
+    "static/js/main.6f46b1f3.js"
+  ]
+}
