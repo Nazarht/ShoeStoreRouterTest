@@ -1,0 +1,42 @@
+.form-control {
+    padding: 4px;
+    visibility: hidden;
+    color: rgb(223, 48, 48);
+}
+
+.form-control.invalid {
+    visibility: visible;
+    animation: appear 1s ease-in-out;
+}  
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.form-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-holder div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}

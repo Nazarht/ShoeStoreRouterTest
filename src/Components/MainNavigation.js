@@ -46,7 +46,7 @@ function MainNavigation() {
             <NavLink to='cart'>
 
 
-            <img src='https://img.icons8.com/sf-black-filled/512/shopping-cart.png' />
+            <img src='https://img.icons8.com/sf-black-filled/512/shopping-cart.png' alt='cart'/>
             <span>{cartAmount}</span>
             </NavLink>
         </div>

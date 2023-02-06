@@ -1,7 +1,7 @@
 import { json, useLoaderData, useParams } from "react-router-dom";
 import classes from "./ProductPage.module.css";
 import { useState } from "react";
-import cart, { cartActions } from "../store/cart";
+import { cartActions } from "../store/cart";
 import { useDispatch } from "react-redux";
 
 function ProductPage() {
@@ -44,7 +44,7 @@ function ProductPage() {
 
   return (
     <div className={classes["product-page"]}>
-      <img src={data.img} />
+      <img src={data.img} alt='a pair of sneakers'/>
       <div>
         <h1>{data.name}</h1>
         <p>{data.description}</p>
