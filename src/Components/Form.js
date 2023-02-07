@@ -1,6 +1,6 @@
 import useForm from "../hook/useForm";
 import "./Form.css";
-import { Form, json } from "react-router-dom";
+import { Form, json, redirect } from "react-router-dom";
 import { store } from "../store";
 
 function FormComponent() {
@@ -93,7 +93,7 @@ export async function action({request, params}) {
         })
     }
 
-    return response
+    return redirect('/');
 
     console.log(cartData)
 }
