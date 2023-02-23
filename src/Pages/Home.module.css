@@ -21,3 +21,13 @@
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+
+@media screen and (max-width: 500px) {
+.home {
+    height: 100vh;
+}
+
+    .home img {
+        width: max(40vmin);
+    }
+}
