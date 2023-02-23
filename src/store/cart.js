@@ -30,6 +30,9 @@ const cart = createSlice({
         if ( state[action.payload[0]][action.payload[1]] === 0) {
             delete  state[action.payload[0]][action.payload[1]];
         } 
+    },
+    refreshCart(state, action) {
+        return {};
     }
   },
 });

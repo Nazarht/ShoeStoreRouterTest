@@ -2,6 +2,7 @@ import useForm from "../hook/useForm";
 import "./Form.css";
 import { Form, json, redirect } from "react-router-dom";
 import { store } from "../store";
+import { cartActions } from "../store/cart";
 
 function FormComponent() {
 
@@ -93,6 +94,8 @@ export async function action({request, params}) {
         })
     }
 
-    return redirect('/');
+    store.dispatch(cartActions.refreshCart())
+
+    return redirect('/end');
 
 }

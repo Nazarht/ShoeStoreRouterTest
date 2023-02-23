@@ -8,6 +8,7 @@ import LayoutRoot from "./Pages/Root";
 import Shop, { loader as Productsloader } from "./Pages/Shop";
 import ShopRoot from "./Pages/ShopRoot";
 import { action as cartAction} from "./Components/Form";
+import DeliveryEnd from "./Pages/DeliveryEnd";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
         element: <Cart />,
         loader: Productsloader,
         action: cartAction
+      },
+      {
+        path: 'end',
+        element: <DeliveryEnd />
       }
     ],
   },
