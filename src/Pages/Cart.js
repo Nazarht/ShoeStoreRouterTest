@@ -82,12 +82,12 @@ function Cart() {
 
   const onShow = () => {
     setShowForm((prevState) => {
-        return !prevState
+      return !prevState;
     });
   };
 
-  return (
-    <div className={classes["cart-holder"]}>
+  const cartIsFull = (
+    <>
       <h1>Cart</h1>
       {loadedCart}
       <div className={classes.price}>
@@ -98,11 +98,19 @@ function Cart() {
 
       {showForm && (
         <div className={classes.form}>
-          <Form  />
+          <Form />
         </div>
       )}
+    </>
+  );
+
+  const cartIsEmpty = (
+    <div className={classes.empty}>
+      <h2>Your cart is empty...</h2>
     </div>
   );
+
+  return <div className={classes["cart-holder"]}>{totalPrice !== 0 ? cartIsFull : cartIsEmpty}</div>;
 }
 
 export default Cart;
