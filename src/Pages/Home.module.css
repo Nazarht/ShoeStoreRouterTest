@@ -1,7 +1,7 @@
 .home {
     text-align: center;
     font-size: 2rem;
-    height: 80vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,10 +22,26 @@
     object-fit: cover;
 }
 
-@media screen and (max-width: 500px) {
-.home {
-    height: 100vh;
+.button {
+    padding: 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: #aa3e3e; 
+    /* {
+          100: "#f7dcdc",
+          200: "#eeb8b8",
+          300: "#e69595",
+          400: "#dd7171",
+          500: "#d54e4e",
+          600: "#aa3e3e",
+          700: "#802f2f",
+          800: "#551f1f",
+          900: "#2b1010"
+},; */
+    color: white;
 }
+
+@media screen and (max-width: 500px) {
 
     .home img {
         width: max(40vmin);
